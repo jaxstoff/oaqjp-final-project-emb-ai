@@ -3,7 +3,7 @@ import unittest
 import ast
 
 class TestEmotionDetection(unittest.TestCase):
-    # uses ast.literal_eval because output from emotion_detector is not valid json
+    # uses ast.literal_eval because output from emotion_detector is not valid json so we can't use json.loads
     # why? because Task 3 said to do it that way!
     def test_emotion_detector(self):
         # Test case for joy
